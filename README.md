@@ -4,6 +4,11 @@ A full-stack inventory management application built with **Next.js** and **Supab
 
 StockPilot focuses on practical inventory workflows, data management, authentication, and a maintainable application architecture.
 
+## demo account
+
+userName =demo@stockpilot.app
+demo@stockpilot.app
+
 ## Features
 
 ### Authentication & User Management
