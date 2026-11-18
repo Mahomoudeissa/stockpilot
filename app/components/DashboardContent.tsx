@@ -27,6 +27,7 @@ export default function DashboardContent({
   const { t, language, direction } = useLanguage();
 
   const isArabic = language === "ar";
+  const userName = userEmail?.split("@")[0] || "User";
 
   const columns = [
     {
@@ -50,7 +51,8 @@ export default function DashboardContent({
       width: "17.5%",
     },
   ] as const;
-
+  console.log(userName);
+  console.log(userEmail);
   return (
     <main dir={direction} className="min-w-0 p-4 md:p-8 lg:p-10">
       <header className="mb-8">
@@ -62,7 +64,7 @@ export default function DashboardContent({
 
         <p className="mt-2 text-slate-600">
           {isArabic ? "أهلًا بعودتك، " : "Welcome back, "}
-          {userEmail || (isArabic ? "مستخدم" : "User")}
+          {userName}
         </p>
       </header>
 

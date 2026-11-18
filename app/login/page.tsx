@@ -24,6 +24,7 @@ export default function LoginPage() {
 
           <input
             id="email"
+            defaultValue="demo@stockpilot.app"
             name="email"
             type="email"
             autoComplete="email"
@@ -40,6 +41,7 @@ export default function LoginPage() {
 
           <input
             id="password"
+            defaultValue="SpDemo#2026!X9"
             name="password"
             type="password"
             autoComplete="current-password"

@@ -60,7 +60,7 @@ export default async function Dashboard() {
   const fullName = profile?.full_name?.trim() ?? "";
 
   const displayName =
-    fullName.split(/\s+/).filter(Boolean).slice(0, 2).join(" ") || null;
+    profile?.full_name?.trim() || user.email?.split("@")[0] || "User";
 
   return (
     <DashboardContent
